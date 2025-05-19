@@ -1,6 +1,7 @@
 # README
 An automatic restart script for itzg/minecraft-server docker container.
 The script can wait until all players log off until it restarts the server.
+Relies on container's restart policy to start back up.
 Add something to trigger it daily, like crontab.
 
 # Options
@@ -24,4 +25,4 @@ Used commands are under the messages if you need to use custom ones like `execut
 
 # Logs
 The default logging path is the working directory, named `restarts.log`.
-change `logpath` variable custom log path.
+change `logpath` variable for a custom log path.
